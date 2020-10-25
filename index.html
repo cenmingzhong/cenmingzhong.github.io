@@ -397,79 +397,18 @@
 
       
         
-          
-            <h1 id="SpringBoot学习笔记（创建SpringBoot项目）"><a href="#SpringBoot学习笔记（创建SpringBoot项目）" class="headerlink" title="SpringBoot学习笔记（创建SpringBoot项目）"></a>SpringBoot学习笔记（创建SpringBoot项目）</h1><blockquote>
+          <h1 id="SpringBoot学习笔记（创建SpringBoot项目）"><a href="#SpringBoot学习笔记（创建SpringBoot项目）" class="headerlink" title="SpringBoot学习笔记（创建SpringBoot项目）"></a>SpringBoot学习笔记（创建SpringBoot项目）</h1><blockquote>
 <p><strong>创建一个<code>SpringBoot</code>项目</strong>；</p>
 </blockquote>
 <hr>
-<h2 id="第一步：创建maven项目-（jar）"><a href="#第一步：创建maven项目-（jar）" class="headerlink" title="第一步：创建maven项目;（jar）"></a>第一步：创建<code>maven</code>项目;（jar）</h2><p>1、创建新项目；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025112513388.png" alt="image-20201025112513388"></p>
-<hr>
-<p>2、选择<code>maven</code>项目；</p>
-<h4 id=""><a href="#" class="headerlink" title=""></a><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025112802888.png" alt="image-20201025112802888"></h4><hr>
-<p>3、填写名字；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025113212124.png" alt="image-20201025113212124"></p>
-<hr>
-<p>4、选择<code>maven</code>自动导入；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025113409182.png" alt="image-20201025113409182"></p>
-<hr>
-<p>5、选择设置；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025121253840.png" alt="image-20201025121253840"></p>
-<hr>
-<p>6、将maven设置为本地配置好的；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025121352800.png" alt="image-20201025121352800"></p>
-<hr>
-<h2 id="第二步、导入SpringBoot相关的依赖；"><a href="#第二步、导入SpringBoot相关的依赖；" class="headerlink" title="第二步、导入SpringBoot相关的依赖；"></a>第二步、导入SpringBoot相关的依赖；</h2><p>1、导入依赖；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025125546542.png" alt="image-20201025125546542"></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.4.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">relativePath</span>/&gt;</span> <span class="comment">&lt;!-- lookup parent from repository --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3、编写一个主程序；（启动SpringBoot应用）"><a href="#3、编写一个主程序；（启动SpringBoot应用）" class="headerlink" title="3、编写一个主程序；（启动SpringBoot应用）"></a>3、编写一个主程序；（启动SpringBoot应用）</h2><p>1、新建<strong>HelloWorldMainApplicaiton.java</strong>；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025130806777.png" alt="image-20201025130806777"></p>
-<hr>
-<p>2.给<strong>HelloWorldMainApplication</strong>添加<code>@SpringBootApplication</code>注解:来标注一个主程序类，说明这是一个<code>SpringBoot</code>应用；</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.cenmingzhong;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> cenmingzhong</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@SpringBootApplication</span>:来标注一个主程序类，说明这是一个SpringBoot应用</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@create</span> 2020-10-25-下午 13:07</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorldMainApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//Spring应用启动起来</span></span><br><span class="line">        SpringApplication.run(HelloWorldMainApplication<span class="class">.<span class="keyword">class</span>,<span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4、编写相关的Controller、Service；"><a href="#4、编写相关的Controller、Service；" class="headerlink" title="4、编写相关的Controller、Service；"></a>4、编写相关的Controller、Service；</h2><p>1、新建<strong>HelloController.java</strong>；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025131837760.png" alt="image-20201025131837760"></p>
-<hr>
-<p>2.使用<code>@Controller</code>注解来讲<strong>HelloController.java</strong>加入容器，使用<code>@RequestMapping(&quot;/hello&quot;)</code>注解来接收来自浏览器的<strong>hello</strong>请求,使用<code>@ResponseBody</code>注解来将数据返回到浏览器；</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.cenmingzhong.controller;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Controller;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.ResponseBody;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> cenmingzhong</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@create</span> 2020-10-25-下午 13:18</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@ResponseBody</span></span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"/hello"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Hello World!"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="5、运行主程序进行测试；"><a href="#5、运行主程序进行测试；" class="headerlink" title="5、运行主程序进行测试；"></a>5、运行主程序进行测试；</h2><p>1、在<strong>HelloWorldMainApplication.java</strong>点击三角形符号，运行项目；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025132950283.png" alt="image-20201025132950283"></p>
-<hr>
-<p>2、可以在控制台看到运行信息，可以看到Tomcat已经启动，8080端口，因为有内嵌Tomcat，所以不需要配置Tomcat；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025133247789.png" alt="image-20201025133247789"></p>
-<hr>
-<p>3、访问<strong>localhost:8080/hello</strong>,可以正常访问，也正常返回<code>返回值</code>；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025133643558.png" alt="image-20201025133643558"></p>
-<hr>
-<h2 id="6、简化部署"><a href="#6、简化部署" class="headerlink" title="6、简化部署"></a>6、简化部署</h2><p>1、导入插件，将应用打包成一个可执行的jar包；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025134256606.png" alt="image-20201025134256606"></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--这个插件可以将应用打包成一个可执行的jar包--&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>2、在<code>maven</code>中选择命令，在<code>Lifecycle</code>中选择<code>package</code>进行打包；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025134620269.png" alt="image-20201025134620269"></p>
-<hr>
-<p>3、打好的包放在工程目录下<code>target</code>下；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025134849907.png" alt="image-20201025134849907"></p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025134944574.png" alt="image-20201025134944574"></p>
-<hr>
-<p>4、把该jar包复制出来放在一个新的文件夹，在导航栏输入<code>cmd</code>，进入控制台；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025135511000.png" alt="image-20201025135511000"></p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025135538672.png" alt="image-20201025135538672"></p>
-<hr>
-<p>5、输入<code>java -jar SpringBootTest-1.0-SNAPSHOT.jar</code>命令，执行该jar包，也可以将项目启动起来；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025135856979.png" alt="image-20201025135856979"></p>
-<hr>
-<p>6、访问<strong>localhost:8080/hello</strong>,可以正常访问，也正常返回<code>返回值</code>；</p>
-<p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025133643558.png" alt="image-20201025133643558"></p>
-<hr>
-
-          
+<h2 id="第一步：创建maven项目-（jar）"><a href="#第一步：创建maven项目-（jar）" class="headerlink" title="第一步：创建maven项目;（jar）"></a>第一步：创建<code>maven</code>项目;（jar）</h2>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/10/25/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -643,10 +582,14 @@
 
       
         
-          
-            <p>家里蹲将近两个半月，<br>感觉人生迷茫，出路扑朔迷离，我身处一片迷雾之中，拨不开那重重叠叠的迷雾陷阱。<br>有一颗想要创造人生价值得心，<br>却找不到可以实现价值的方向，<br>夜里辗转反侧，脑中对于创业创新的想法在里面闹腾，在里面打架，使我难以入睡。<br>做完躺在床上，脑中一会儿是豆腐花在碗中蹦哒，唱着吆喝着，他叫我去摆摊卖他，<br>点开淘宝，搜索百度，搜索制造秘方，比价制造机器。<br>在一番闹腾之中，反卧在床，胸被压的喘不过气，最终手机屏幕熄灭，犹如我的心也再次暗淡，<br>任由豆腐花在那里卖力闹腾，终究没有选择第二天就出去卖他。<br>接着，千奇百怪，浮想联翩，各种各样的东西走马观花般出现在眼前。<br>有狼牙土豆，被炸的金黄，在那里翻腾；<br>有农村快递代收点，在那里唤我落户；<br>有养殖肉鸡，教我如何将它喂的白白胖胖，一旁的收购者在旁唱着歌，报出的价格让我跳起了舞；<br>有做小吃的，让我买个烤箱，几百度几百度的考出来一个有一个蛋挞；<br>有做早餐的，让我买个肠粉机，一屉又一屉的拉出来一份有一份肠粉；<br>有做定制服装的，在学校毕业典礼上，我对着一批又一批的毕业生，卖出一车又一车的纪念衫；<br>仿佛坠入了一层有一层的盗梦空间，一遍又一遍的来回逡巡，<br>终于快到凌晨。<br>纵观满脑子奇思妙想，<br>开发app卖宠物；<br>开发人脸识别零食柜，装在教学楼在一层上面；<br>开发智能机器人，上面住着一位金手指老爷爷，教你如何升级打怪，走上人生巅峰；<br>所有所有的这些想法，折磨着我，<br>明年的学费还得靠助学贷款，我自己的生活该怎么维持；<br>今年的考研计划，与经济压力迫切想要经济独立，两者冲突的越来越严重，难以认真学习；<br>家里妈妈没有工作，身体不好，我早已规划出路，却难以谋划出路，社保，医疗，保险；<br>姐姐工作多年，无存款，对未来没有规划，低薪服务员一枚，我该怎么帮助她；<br>弟弟仍在汽车维修店做学徒，他热爱王者荣耀，我可以帮助他发视频，增长一些名气，以后他独自建立维修店的时候，我能为他做些什么；<br>女朋友的未来规划，我应该以什么样的姿态去面对未来；<br>我自己的未来规划，工作几年，创业几年，成功或者失败，我自己又该何去何从；<br>我多么想，<br>有一个人，<br>在上面，<br>带带我，<br>跟我说，<br>这样走，<br>跟我说，<br>没关系，还有我。</p>
-
-          
+          <p>家里蹲将近两个半月，<br>感觉人生迷茫，出路扑朔迷离，我身处一片迷雾之中，拨不开那重重叠叠的迷雾陷阱。<br>有一颗想要创造人生价值得心，<br>却找不到可以实现价值的方向，<br>夜里辗转反侧，脑中对于创业创新的想法在里面闹腾，在里面打架，使我难以入睡。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/30/%E6%88%91%E8%AF%A5%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -820,15 +763,14 @@
 
       
         
-          
-            <h1 id="大三下学期课程计划"><a href="#大三下学期课程计划" class="headerlink" title="大三下学期课程计划"></a>大三下学期课程计划</h1><p>学校通知开学时间是3月2日<br>开学后课程将在网课进行<br>预计3月底可以去学校<br>但是并不确定</p>
-<p>但是不管怎么样<br>我的学习计划得安排上<br>根据大三下学期的课程安排<br>制作了学习课程内容计划<br>内容如下<br><strong>大三下学期课程计划</strong></p>
-<p><strong>1. 图形图像处理技术<br>2. 虚拟现实技术<br>3. 计算机组网技术<br>4. 软件工程<br>5. 物联网技术及开发<br>6. 嵌入式系统设计与开发</strong></p>
-<p><img src="http://r.photo.store.qq.com/psc?/V12OQfIO4Rb7nr/Tiy10*PRF5enyWrLfdcKz0spWW*Iiba*5W4pwMYR49NpdFfjmSDrMtfsI3at1zgssyI5QedFI2WM4C*2rguM4srHB2Wyd5vGlA*rp3sBZMc!/r" alt=""></p>
-<p>估计网课内容比较简单<br>没有深入进行教学<br>还是得自己好好准备一下学习计划<br>自己学得精通一点</p>
-<p>距离<strong>考研</strong>时间越来越近<br>考研学科必须尽快安排上<br><em>考研英语、数学、政治、计科408</em>这些都要尽快安排上日程<br><strong>fighting!</strong></p>
-
-          
+          <h1 id="大三下学期课程计划"><a href="#大三下学期课程计划" class="headerlink" title="大三下学期课程计划"></a>大三下学期课程计划</h1><p>学校通知开学时间是3月2日<br>开学后课程将在网课进行<br>预计3月底可以去学校<br>但是并不确定</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/02/18/%E8%AE%A1%E5%88%92%E5%AE%89%E6%8E%92/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1002,15 +944,14 @@
 
       
         
-          
-            <p>庚子新年，正月十五元宵节<br>本是逛花灯吃汤圆的团圆日子<br>一场突如其来的战“疫”<br>困住了家家户户出行的脚步<br>一夜之间，南京成了一座空城<br>不出门成了本次战役的最佳“战术”</p>
-<p>当阴霾笼罩荆楚大地<br>你像千年前的盘龙城一样沉睡不起<br>当乌云遮蔽九省通衢<br>你像被遗忘的放鹰台一样掩声而泣<br>当黑暗包裹整座江城<br>你像个无助的孩子被他们关了禁闭<br>而我们都知道，你生病了，而且有些严重</p>
-<p>但是，我希望<br>你不要因为一时的沉睡而一蹶不振<br>不要因为一时的乌云密布而忘了雨过天晴<br>不要因暂时的封闭而忘记敞开心扉<br>在我心中<br>你是华中大地璀璨历史上最漂亮的一笔</p>
-<p>加油，武汉！<br>我要你记得<br>国家正为你封城疗疾<br>百姓正为你日夜祈福<br>你是亿万人民足不出户间最挂念的城市</p>
-<p>加油，武汉！<br>我要你记得<br>寒冬会过去，春天会如约而至<br>而你从来都不是一个人在战斗<br>我们始终与你同在<br>心系于你，共战疫情，万众一心<br>望你早日康复</p>
-<p>加油，武汉！<br>我要你记得<br>只要我们坚定信心、同舟共济<br>科学防治、精准施策<br>一定能打赢此次疫情防控阻击战<br>待疫情解除，万象回春<br>让我们再一起观赏“东风夜放花千树”的繁华美景</p>
-
-          
+          <p>庚子新年，正月十五元宵节<br>本是逛花灯吃汤圆的团圆日子<br>一场突如其来的战“疫”<br>困住了家家户户出行的脚步<br>一夜之间，南京成了一座空城<br>不出门成了本次战役的最佳“战术”</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/02/08/%E6%AD%A6%E6%B1%89%E5%8A%A0%E6%B2%B9-%E5%85%83%E5%AE%B5%E8%8A%82%E5%BF%AB%E4%B9%90/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
