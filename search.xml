@@ -7,8 +7,6 @@
 <p><strong>创建一个<code>SpringBoot</code>项目</strong>；</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-
 <h2 id="第一步：创建maven项目-（jar）"><a href="#第一步：创建maven项目-（jar）" class="headerlink" title="第一步：创建maven项目;（jar）"></a>第一步：创建<code>maven</code>项目;（jar）</h2><p>1、创建新项目；</p>
 <p><img src="images/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.assets/image-20201025112513388.png" alt="image-20201025112513388"></p>
 <hr>
